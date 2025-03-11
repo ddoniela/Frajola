@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import java.util.Locale
 
-class ProductListAdapter:
+class ProductListAdapter(private var products: List<Product>) :
     ListAdapter<Product, ProductListAdapter.ProductViewHolder>(ProductDiffUtils()) {
-        private lateinit var onClickListener: (Product) -> Unit
+    private lateinit var onClickListener: (Product) -> Unit
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_list, parent, false)
@@ -26,6 +26,11 @@ class ProductListAdapter:
 
     fun setOnClickListener(onClick: (Product) -> Unit) {
         onClickListener = onClick
+    }
+
+    fun updateList(newProducts: List<Product>) {
+        this.products = newProducts
+        notifyDataSetChanged()
     }
 
     class ProductViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {

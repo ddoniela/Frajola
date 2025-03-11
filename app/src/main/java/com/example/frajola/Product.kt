@@ -5,6 +5,7 @@ import androidx.annotation.DrawableRes
 data class Product(
     val product: String,
     val description: String,
+    val category: String,
     val price: Double,
     @DrawableRes val icon: Int
 )
