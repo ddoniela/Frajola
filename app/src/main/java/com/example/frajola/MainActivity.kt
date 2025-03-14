@@ -54,11 +54,11 @@ class MainActivity : AppCompatActivity() {
 
 val products = listOf(
     Product(
-        "Terno bege",
-        "Ajustado para a perfeição.",
-        "Terno",
-        788.99,
-        R.drawable.terno_bege
+        "Smoking de lã italiana",
+        "Elegância extrema.",
+        "Smoking",
+        150.00,
+        R.drawable.terno_branco
     ),
     Product(
         "Gravata borboleta",
@@ -75,17 +75,17 @@ val products = listOf(
         R.drawable.paleto_bege
     ),
     Product(
-        "Smoking de lã italiana",
-        "Elegância extrema.",
-        "Smoking",
-        150.00,
-        R.drawable.terno_branco
-    ),
-    Product(
         "Camisa branca de linho",
         "Atemporal e chique.",
         "Camisa",
         200.99,
         R.drawable.camisa_branca
+    ),
+    Product(
+        "Terno bege",
+        "Ajustado para a perfeição.",
+        "Terno",
+        788.99,
+        R.drawable.terno_bege
     )
 )
