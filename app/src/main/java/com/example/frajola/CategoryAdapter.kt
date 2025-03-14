@@ -1,6 +1,9 @@
 package com.example.frajola
 
 import android.graphics.Color
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.UnderlineSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,8 +22,8 @@ class CategoryAdapter(
 
         fun bind(category: String) {
             btnCategory.text = category
-            btnCategory.setBackgroundColor(
-                if (category == selectedCategory) Color.LTGRAY else Color.WHITE
+            btnCategory.setTextColor(
+                if (category == selectedCategory) Color.WHITE else Color.GRAY
             )
             btnCategory.setOnClickListener {
                 selectedCategory = category

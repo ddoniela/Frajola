@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var categoryAdapter: CategoryAdapter
     private lateinit var adapter: ProductListAdapter
 
-    private val categories = listOf("Tudo", "Traje completo", "Terno", "Colete", "Gravata")
+    private val categories = listOf("Tudo", "Terno", "Smoking", "Camisa", "Gravata")
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,45 +54,38 @@ class MainActivity : AppCompatActivity() {
 
 val products = listOf(
     Product(
-        "Traje Completo Dourado",
-        "Traje completo dourado dos anos 90 com detalhes floridos.",
-        "Traje completo",
-        788.99,
-        R.drawable.traje_completo1
-    ),
-    Product(
-        "Traje completo Roxo",
-        "Traje completo na cor púrpura. Elegante e especial.",
-        "Traje completo",
-        1020.99,
-        R.drawable.traje_completo_roxo
-    ),
-    Product(
-        "Colete cinza",
-        "Colete essencial para um look refinado e clássico.",
-        "Colete",
-        150.00,
-        R.drawable.colete_cinza
-    ),
-    Product(
-        "Gravata listrada",
-        "Ideal para ternos sóbrios. Toque criativo sem deixar de ser clássico",
-        "Gravata",
-        40.50,
-        R.drawable.gravata_masculina_azul_listra
-    ),
-    Product(
-        "Colete vermelho",
-        "Aquele toque de cor para não passar despercebido.",
-        "Colete",
-        200.99,
-        R.drawable.colete_vermelho
-    ),
-    Product(
-        "Terno Dourado",
-        "O terno elegante que vai te trazer notoriedade.",
+        "Terno bege",
+        "Ajustado para a perfeição.",
         "Terno",
+        788.99,
+        R.drawable.terno_bege
+    ),
+    Product(
+        "Gravata borboleta",
+        "Feita de seda monocromática.",
+        "Gravata",
+        1020.99,
+        R.drawable.gravata_borboleta
+    ),
+    Product(
+        "Paletó bege de luxo",
+        "Essencial para um look refinado e clássico.",
+        "Terno",
+        150.00,
+        R.drawable.paleto_bege
+    ),
+    Product(
+        "Smoking de lã italiana",
+        "Elegância extrema.",
+        "Smoking",
+        150.00,
+        R.drawable.terno_branco
+    ),
+    Product(
+        "Camisa branca de linho",
+        "Atemporal e chique.",
+        "Camisa",
         200.99,
-        R.drawable.terno_masculino_dourado_paisley_huge_1
+        R.drawable.camisa_branca
     )
 )
