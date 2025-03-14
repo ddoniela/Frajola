@@ -17,7 +17,7 @@ class ProductDetailActivity : AppCompatActivity() {
         val tvDescriptionDetail = findViewById<TextView>(R.id.tv_description_detail)
         val tvPriceDetail = findViewById<TextView>(R.id.tv_price_detail)
         val tvImageDetail = findViewById<ImageView>(R.id.image_detail)
-        val btnBack = findViewById<Button>(R.id.btn_back)
+        val btnBack = findViewById<ImageView>(R.id.btn_back)
 
         val product = intent.getStringExtra("product")
         val description = intent.getStringExtra("description")
